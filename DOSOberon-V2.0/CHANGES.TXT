@@ -1,0 +1,86 @@
+OBERON FOR MS-DOS
+This file contains all the changes made for the current release.
+
+2. 6. 93 
+ Displayinterface changed
+ (CopyPatternC, ReplConstC, ReplPatternC)
+
+1. 4. 93 (no joke)
+	new release bug fixes.
+
+5. 1. 93
+ Bug with Date fixed
+
+9. 12. 92
+ Release V1.4
+	
+ Write V2.4:
+ - Write frames can be nested.
+ - Scrolling backwards implemented (right mouse key in scroll bar).
+ - Scrolling to end of text (middle-left) shows the end of the text at 
+   the bottom of the frame.
+ - Right margin
+ of a paragraph can be set with Write.Set right 
+   (number | "default") directly.
+ - Setting the left margin with Write.Set left does not change the right 
+   margin, but the width of the paragraph is adjusted. This corresponds with 
+   the interactive setting of the left margin.
+ - Write.Open and Write.SysOpen accept strings to specify filenames that 
+   do not follow the Oberon naming convention.
+ - The Tick in the scroll bar is two pixels high. This helps in 
+   discriminating between Text frame
+s and Write frames.
+ - WriteTools.ToASCII removes all kinds of diacritical marks.
+ - Write.Guide.Text updated.
+ - Write.Programming.Text: minor bug eliminated.
+		
+ Files, Display:
+  Extended definitions of Files and Display/Display1fx.
+  Files1 omitted
+	
+ Revised loader
+	
+ Printer:
+  Support of HP-500, HP-500C and HP-550C printers
+
+29. 10. 92
+ Problems with two-button-mouse fixed
+
+21. 10. 92
+ Release V1.3
+	
+ Compiler: 
+  The parameters portnr and val of the procedures SYSTEM.PORTOUT(portnr, val) 
+   and SYSTEM.PORTIN(portnr, val) can now be variables or constants.
+		
+  New Procedures: SYSTEM.CLI() and SYSTEM STI() for disabling and enabling 
+		  interrupts.
+		
+  Bug with REAL arithmetic fixed
+		
+  V24:
+   Bug in procedure Start fixed. Interrupts on COM2 are now handled correctly. 
+		
+  Files: 
+   Bug with Filecache fixed.
+		
+  Input:
+   Support of different keyboard settings.
+   Codepages 437 and 850 as far as used in Oberon.
+		
+  FoldElems:
+   Bug fixed. 
+		
+  Coroutines and Simulation are no more in the package.
+		
+  Oberon can run now in any directory, i. e. the name of the directory need 
+  not be OBERON. Before running Oberon, set the current directory to the 
+  one you installed Oberon in.
+	
+  If there is no coprocessor available, the floatinstructions are emulated by a
+  floating-point-emulator.
+
+7. 10. 92
+  Release V1.2
+  Start of this File
+
